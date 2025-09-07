@@ -9,7 +9,7 @@ import {
   ArrowDown,
 } from "lucide-react";
 import profilePicture from "../assets/profile_pic.jpeg";
-import resume from "../assets/ramesh_resume_updated_25-07-2025.pdf";
+import resume from "../assets/ramesh_resume_updated_07-09-2025.pdf";
 
 const Hero = () => {
   const socialLinks = [
