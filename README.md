@@ -36,7 +36,7 @@ Before running this project, make sure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/rameshbanala/portfolio-website.git
+git clone https://github.com/rameshbanala/ramesh-portfolio.git
 cd portfolio-website
 ```
 
