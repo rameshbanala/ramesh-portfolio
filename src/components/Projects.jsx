@@ -10,6 +10,15 @@ import fixitImg from '../assets/fixit.png'
 const Projects = () => {
   const projects = [
     {
+      title: 'Estate360 — Real Estate Platform',
+      description: 'Built a full-scale real estate platform with property listing, advanced search filters, and multi-role agent dashboards using a PERN + React Native monorepo architecture — sharing business logic across web and mobile. Implemented geo-based property filtering with interactive map views and a multi-role system (buyer, seller, agent, admin) with scoped access control at the API level.',
+      image: null,
+      technologies: ['PostgreSQL', 'Express.js', 'React.js', 'Node.js', 'React Native', 'JWT', 'Docker'],
+      liveDemo: null,
+      featured: true,
+      workProject: true
+    },
+    {
       title: 'Resume Analyzer – AI Resume Evaluation Platform',
       description: 'Built a full-stack application to parse, evaluate, and score resumes using Gemini. Designed a scalable PostgreSQL schema with JSONB fields for flexible resume data. Implemented email validation, rating constraints, query-optimized indexes, and suggested personalized improvements with upskilling advice from parsed data.',
       image: resumeAnalyzerImg, // Using actual project image
@@ -37,14 +46,25 @@ const Projects = () => {
       featured: true
     },
     {
-      title: 'ServeNest – Hyperlocal Platform',
-      description: 'Developed a React Native app connecting users with local services via maps, WhatsApp, and calls. Built admin dashboards with role-based access and analytics. Integrated community features including events, jobs, marketplace, and donations with real-time notifications and Razorpay monetization.',
-      image: null, // No image provided - will show gradient fallback
-      technologies: ['React Native', 'Node.js', 'MongoDB', 'Razorpay', 'Maps API', 'Real-time Notifications'],
+      title: 'ServeNest – Hyperlocal Service Platform',
+      description: 'Architected a cross-platform React Native app connecting 5,000+ users with hyperlocal service providers via integrated maps, WhatsApp deep-links, and direct calls. Built role-based admin dashboards with real-time analytics (reducing reporting effort by ~60%), RESTful APIs for community modules (events, jobs, marketplace, donations), Razorpay subscription monetisation with webhook handlers, and Firebase Cloud Messaging for real-time push notifications. Deployed with Docker + Nginx on Linux VMs.',
+      image: null,
+      technologies: ['React Native', 'Node.js', 'Express.js', 'PostgreSQL', 'Razorpay', 'Firebase FCM', 'Docker', 'Nginx', 'JWT'],
       liveDemo: null,
       github: null,
       featured: true,
       workProject: true
+    },
+    {
+      title: 'Campusphere – Campus Social & Resource Platform',
+      description: 'Built Campusphere in a competitive 24-hour hackathon at RGUKT — a campus social and resource platform for students. Won 2nd Prize at Aadhya Hackathon 2025 for innovative design and technical execution.',
+      image: null,
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+      liveDemo: null,
+      github: null,
+      featured: false,
+      hackathon: true,
+      hackathonLink: 'https://www.linkedin.com/posts/bhuma-naga-pavan_hackathon-2ndprize-campusphere-ugcPost-7302729057673039872-6L53'
     },
     {
       title: 'NxtWatch – YouTube Clone with Dark Mode',
@@ -277,8 +297,15 @@ const Projects = () => {
               </div>
 
               <div className="flex justify-between items-start mb-4">
-                <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg">
-                  <ExternalLink size={20} className="text-white" />
+                <div className="flex items-center gap-2">
+                  <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg">
+                    <ExternalLink size={20} className="text-white" />
+                  </div>
+                  {project.hackathon && (
+                    <span className="px-2 py-1 bg-yellow-500/15 text-yellow-400 rounded-full text-xs font-semibold border border-yellow-500/25">
+                      🏆 2nd Prize
+                    </span>
+                  )}
                 </div>
                 <div className="flex space-x-2">
                   {project.github && (
@@ -299,6 +326,18 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}
                       className="p-2 text-gray-400 hover:text-white transition-colors"
+                    >
+                      <ExternalLink size={18} />
+                    </motion.a>
+                  )}
+                  {project.hackathonLink && (
+                    <motion.a
+                      href={project.hackathonLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      className="p-2 text-yellow-400 hover:text-yellow-300 transition-colors"
+                      title="View LinkedIn Post"
                     >
                       <ExternalLink size={18} />
                     </motion.a>

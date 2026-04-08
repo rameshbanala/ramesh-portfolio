@@ -5,44 +5,44 @@ import { Trophy, Award, Users, ExternalLink } from "lucide-react";
 const Achievements = () => {
   const achievements = [
     {
-      title: "Second Prize - Aadhya Hackathon 2025",
+      title: "2nd Prize — Aadhya Hackathon 2025",
       organization: "RGUKT",
       description:
-        "Won second prize in the prestigious Aadhya Hackathon 2025 at RGUKT for building an innovative project called Campusphere with a strong team.",
+        "Won 2nd Prize at Aadhya Hackathon 2025 at RGUKT. Built Campusphere — a campus social and resource platform for students — in a competitive 24-hour hackathon, featuring course resources, campus events, peer networking, and a community feed.",
       icon: Trophy,
       color: "from-yellow-400 to-orange-500",
-      link: "https://www.linkedin.com/posts/bhuma-naga-pavan_hackathon-2ndprize-campusphere-ugcPost-7302729057673039872-6L53", // LinkedIn post link
+      link: "https://www.linkedin.com/posts/bhuma-naga-pavan_hackathon-2ndprize-campusphere-ugcPost-7302729057673039872-6L53",
+      date: "2025",
+    },
+    {
+      title: "Production Deployment at ScaleOrange",
+      organization: "ScaleOrange Technologies",
+      description:
+        "Contributed to production deployments serving real users — ServeNest with 5,000+ active users and Estate360 on live infrastructure. Managed Docker, Nginx, SSL, and Linux VMs for real-world traffic at ScaleOrange Technologies.",
+      icon: Award,
+      color: "from-blue-400 to-purple-500",
+      link: null,
       date: "2025",
     },
     {
       title: "High Academic Performance",
       organization: "RGUKT RK Valley",
       description:
-        "Maintained excellent academic performance with current CGPA of 9.04/10.0 in Computer Science Engineering.",
+        "Maintained excellent academic performance with current CGPA of 9.04/10.0 in Computer Science Engineering and 9.76/10.0 in Pre-University Course.",
       icon: Award,
       color: "from-green-400 to-blue-500",
       link: null,
       date: "Ongoing",
     },
     {
-      title: "Perfect Secondary Education Score",
-      organization: "Sri Chaitanya School",
+      title: "Open-Source Portfolio on GitHub",
+      organization: "GitHub",
       description:
-        "Achieved perfect 10/10 CGPA in Secondary School Certificate, demonstrating consistent academic excellence.",
+        "Actively maintaining an open-source portfolio of full-stack projects on GitHub with documented READMEs, deployment pipelines, and production-ready code across MERN, PERN, and React Native projects.",
       icon: Award,
       color: "from-purple-400 to-pink-500",
-      link: null,
-      date: "2020",
-    },
-    {
-      title: "Outstanding PUC Performance",
-      organization: "RGUKT RK Valley",
-      description:
-        "Achieved exceptional 9.76/10.0 CGPA in Pre University Course, ranking among top performers.",
-      icon: Award,
-      color: "from-blue-400 to-purple-500",
-      link: null,
-      date: "2022",
+      link: "https://github.com/rameshbanala",
+      date: "Ongoing",
     },
   ];
 
@@ -128,17 +128,6 @@ const Achievements = () => {
                   {achievement.description}
                 </p>
 
-                {achievement.title.includes("Hackathon") && (
-                  <div className="mt-4 p-3 md:p-4 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-lg border border-yellow-500/20">
-                    <p className="text-yellow-400 font-medium text-xs md:text-sm mb-1">
-                      Project: Campusphere
-                    </p>
-                    <p className="text-gray-400 text-xs md:text-sm">
-                      Built an innovative solution with strong teamwork and
-                      technical excellence
-                    </p>
-                  </div>
-                )}
               </motion.div>
             );
           })}

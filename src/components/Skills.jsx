@@ -6,7 +6,7 @@ const Skills = () => {
     {
       title: 'Languages',
       skills: [
-        { name: 'JavaScript', level: 90, color: 'from-yellow-400 to-yellow-600' },
+        { name: 'JavaScript (ES6+)', level: 90, color: 'from-yellow-400 to-yellow-600' },
         { name: 'TypeScript', level: 85, color: 'from-blue-400 to-blue-600' },
         { name: 'Python', level: 80, color: 'from-green-400 to-green-600' },
         { name: 'Java', level: 75, color: 'from-red-400 to-red-600' },
@@ -17,36 +17,48 @@ const Skills = () => {
       title: 'Frontend',
       skills: [
         { name: 'React.js', level: 95, color: 'from-cyan-400 to-cyan-600' },
+        { name: 'React Native', level: 88, color: 'from-blue-400 to-blue-600' },
+        { name: 'Redux / Context API', level: 82, color: 'from-purple-400 to-purple-600' },
         { name: 'Tailwind CSS', level: 90, color: 'from-teal-400 to-teal-600' },
-        { name: 'HTML5', level: 95, color: 'from-orange-400 to-orange-600' },
-        { name: 'CSS3', level: 88, color: 'from-blue-400 to-blue-600' },
+        { name: 'HTML5 / CSS3', level: 95, color: 'from-orange-400 to-orange-600' },
       ]
     },
     {
       title: 'Backend',
       skills: [
         { name: 'Node.js', level: 90, color: 'from-green-400 to-green-600' },
-        { name: 'Express.js', level: 85, color: 'from-gray-400 to-gray-600' },
-        { name: 'REST APIs', level: 88, color: 'from-indigo-400 to-indigo-600' },
-        { name: 'JWT Auth', level: 82, color: 'from-pink-400 to-pink-600' },
+        { name: 'Express.js', level: 88, color: 'from-gray-400 to-gray-600' },
+        { name: 'REST API Design', level: 88, color: 'from-indigo-400 to-indigo-600' },
+        { name: 'JWT Auth', level: 85, color: 'from-pink-400 to-pink-600' },
+        { name: 'Middleware Architecture', level: 82, color: 'from-violet-400 to-violet-600' },
       ]
     },
     {
       title: 'Databases',
       skills: [
-        { name: 'PostgreSQL', level: 85, color: 'from-blue-400 to-blue-600' },
+        { name: 'PostgreSQL', level: 88, color: 'from-blue-400 to-blue-600' },
+        { name: 'MongoDB', level: 82, color: 'from-green-400 to-green-600' },
         { name: 'MySQL', level: 80, color: 'from-orange-400 to-orange-600' },
-        { name: 'MongoDB', level: 78, color: 'from-green-400 to-green-600' },
       ]
     },
     {
-      title: 'Tools & Others',
+      title: 'DevOps / Infra',
       skills: [
-        { name: 'Git', level: 90, color: 'from-red-400 to-red-600' },
-        { name: 'VS Code', level: 95, color: 'from-blue-400 to-blue-600' },
-        { name: 'Postman', level: 85, color: 'from-orange-400 to-orange-600' },
-        { name: 'Firebase', level: 80, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'React Native', level: 85, color: 'from-cyan-400 to-cyan-600' },
+        { name: 'Docker', level: 80, color: 'from-blue-400 to-blue-600' },
+        { name: 'Nginx', level: 78, color: 'from-green-400 to-green-600' },
+        { name: 'Linux', level: 82, color: 'from-yellow-400 to-yellow-600' },
+        { name: 'Git & GitHub Actions', level: 90, color: 'from-red-400 to-red-600' },
+        { name: 'Vercel / Netlify / Render', level: 88, color: 'from-purple-400 to-purple-600' },
+      ]
+    },
+    {
+      title: 'Integrations',
+      skills: [
+        { name: 'Firebase (FCM, Auth)', level: 82, color: 'from-yellow-400 to-yellow-600' },
+        { name: 'Razorpay', level: 80, color: 'from-blue-400 to-blue-600' },
+        { name: 'Google Maps API', level: 78, color: 'from-green-400 to-green-600' },
+        { name: 'Gemini AI API', level: 75, color: 'from-cyan-400 to-cyan-600' },
+        { name: 'Postman', level: 90, color: 'from-orange-400 to-orange-600' },
       ]
     }
   ]
@@ -125,7 +137,7 @@ const Skills = () => {
             Technologies I Love Working With
           </h3>
           <div className="flex flex-wrap justify-center gap-8">
-            {['React', 'Node.js', 'TypeScript', 'Tailwind', 'PostgreSQL', 'MongoDB', 'React Native', 'Express'].map((tech, index) => (
+            {['React.js', 'React Native', 'Node.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'MongoDB', 'Express.js', 'Docker', 'Nginx', 'Firebase', 'Razorpay'].map((tech, index) => (
               <motion.div
                 key={tech}
                 initial={{ opacity: 0, scale: 0.8 }}

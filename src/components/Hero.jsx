@@ -9,7 +9,7 @@ import {
   ArrowDown,
 } from "lucide-react";
 import profilePicture from "../assets/profile_pic.jpeg";
-import resume from "../assets/ramesh_resume_updated_07-09-2025.pdf";
+import resume from "../assets/ramesh_resume_mern.pdf";
 
 const Hero = () => {
   const socialLinks = [
@@ -81,7 +81,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed"
             >
-              Full-Stack & Mobile App Developer
+              MERN Stack & React Native Developer
             </motion.p>
 
             <motion.p
@@ -90,9 +90,9 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="text-base sm:text-lg text-gray-400 mb-8 sm:mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
             >
-              Passionate about building scalable, secure, and user-centric
-              applications with React, Node.js, and React Native. Currently
-              pursuing BTech in CSE with 9.04 CGPA.
+              Full-Stack MERN Developer with 10+ months of production
+              internship experience — shipping real-time systems, mobile apps,
+              and payment integrations at ScaleOrange Technologies.
             </motion.p>
 
             {/* CTA Buttons */}
