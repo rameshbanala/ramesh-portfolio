@@ -5,7 +5,7 @@ import { MapPin, Calendar, GraduationCap, Award } from 'lucide-react'
 const About = () => {
   const stats = [
     { label: 'Current CGPA', value: '9.04/10', icon: Award },
-    { label: 'Expected Graduation', value: 'May 2026', icon: Calendar },
+    { label: 'Internship', value: '10+ Months', icon: Calendar },
     { label: 'Location', value: 'Adoni, Kurnool, AP', icon: MapPin },
     { label: 'Degree', value: 'BTech CSE', icon: GraduationCap },
   ]
@@ -39,25 +39,32 @@ const About = () => {
               Full-Stack & Mobile Developer
             </h3>
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm an aspiring full-stack and mobile app developer with a strong foundation in 
-              JavaScript, React, Node.js, and cross-platform mobile development using React Native. 
-              Currently pursuing my Bachelor's in Computer Science Engineering at RGUKT RK Valley.
+              I'm a full-stack and mobile app developer with 10+ months of hands-on internship
+              experience building production-grade web and mobile applications at ScaleOrange Technologies.
+              Proficient in the MERN stack with additional expertise in PostgreSQL, React Native, and REST API design.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              I have proven ability to build scalable, secure, and user-centric applications 
-              with clean UI and robust backend logic. I'm passionate about innovation, 
-              agile collaboration, and problem-solving.
+              I've delivered multiple end-to-end features in an agile team — including real-time systems,
+              role-based authentication, and third-party payment integrations. Committed to writing clean,
+              scalable, and maintainable code.
             </p>
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-white">Experience Highlights:</h4>
-              <div className="bg-slate-800/50 rounded-lg p-6 backdrop-blur-sm">
-                <h5 className="text-lg font-semibold text-blue-400 mb-2">React Native Developer Intern</h5>
-                <p className="text-purple-300 mb-2">ScaleOrange Technologies - ServeNest</p>
-                <p className="text-gray-300">
-                  Developed a React Native hyperlocal platform connecting users with local services, 
-                  built admin dashboards, integrated community features, and enabled real-time notifications 
-                  with Razorpay monetization.
-                </p>
+              <h4 className="text-xl font-semibold text-white">Internship Highlights:</h4>
+              <div className="bg-slate-800/50 rounded-lg p-6 backdrop-blur-sm border border-slate-700/50">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                  <div>
+                    <h5 className="text-lg font-semibold text-blue-400">Software Developer Intern</h5>
+                    <p className="text-purple-300">ScaleOrange Technologies · Hyderabad (Hybrid)</p>
+                  </div>
+                  <span className="mt-1 sm:mt-0 text-sm text-gray-400 bg-slate-700/50 px-3 py-1 rounded-full">May 2025 – Present</span>
+                </div>
+                <ul className="space-y-2 text-gray-300 text-sm">
+                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-1">▸</span>Architected ServeNest — a cross-platform React Native app connecting 5,000+ users with hyperlocal service providers</li>
+                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-1">▸</span>Built role-based admin dashboards with real-time analytics, reducing manual reporting effort by ~60%</li>
+                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-1">▸</span>Integrated Razorpay payment gateway with webhook handlers for subscription-based monetisation</li>
+                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-1">▸</span>Built and deployed Estate360 — a full-scale real estate platform (PERN + React Native monorepo)</li>
+                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-1">▸</span>Managed Linux VMs, Docker containers, Nginx reverse proxy with SSL, and optimised PostgreSQL (~40% faster APIs)</li>
+                </ul>
               </div>
             </div>
           </motion.div>
