@@ -1,28 +1,36 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Experience from './components/Experience'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Achievements from './components/Achievements'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Snapshot from "./components/Snapshot";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import TechnicalDepth from "./components/TechnicalDepth";
+import Skills from "./components/Skills";
+import CareerEducation from "./components/CareerEducation";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen">
+      <a href="#main" className="skip-link">
+        Skip to content
+      </a>
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Achievements />
-      <Contact />
+      <main id="main">
+        <Hero />
+        <Snapshot />
+        <About />
+        <Experience />
+        <Projects />
+        <TechnicalDepth />
+        <Skills />
+        <CareerEducation />
+        <Contact />
+      </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

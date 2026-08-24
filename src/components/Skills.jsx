@@ -1,160 +1,30 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import Section from "./ui/Section";
+import SectionHeading from "./ui/SectionHeading";
+import { Reveal } from "./ui/Section";
+import Chip from "./ui/Chip";
+import { skillGroups } from "../data/skills";
 
-const Skills = () => {
-  const skillCategories = [
-    {
-      title: 'Languages',
-      skills: [
-        { name: 'JavaScript (ES6+)', level: 90, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'TypeScript', level: 85, color: 'from-blue-400 to-blue-600' },
-        { name: 'Python', level: 80, color: 'from-green-400 to-green-600' },
-        { name: 'Java', level: 75, color: 'from-red-400 to-red-600' },
-        { name: 'C++', level: 70, color: 'from-purple-400 to-purple-600' },
-      ]
-    },
-    {
-      title: 'Frontend',
-      skills: [
-        { name: 'React.js', level: 95, color: 'from-cyan-400 to-cyan-600' },
-        { name: 'React Native', level: 88, color: 'from-blue-400 to-blue-600' },
-        { name: 'Redux / Context API', level: 82, color: 'from-purple-400 to-purple-600' },
-        { name: 'Tailwind CSS', level: 90, color: 'from-teal-400 to-teal-600' },
-        { name: 'HTML5 / CSS3', level: 95, color: 'from-orange-400 to-orange-600' },
-      ]
-    },
-    {
-      title: 'Backend',
-      skills: [
-        { name: 'Node.js', level: 90, color: 'from-green-400 to-green-600' },
-        { name: 'Express.js', level: 88, color: 'from-gray-400 to-gray-600' },
-        { name: 'REST API Design', level: 88, color: 'from-indigo-400 to-indigo-600' },
-        { name: 'JWT Auth', level: 85, color: 'from-pink-400 to-pink-600' },
-        { name: 'Middleware Architecture', level: 82, color: 'from-violet-400 to-violet-600' },
-      ]
-    },
-    {
-      title: 'Databases',
-      skills: [
-        { name: 'PostgreSQL', level: 88, color: 'from-blue-400 to-blue-600' },
-        { name: 'MongoDB', level: 82, color: 'from-green-400 to-green-600' },
-        { name: 'MySQL', level: 80, color: 'from-orange-400 to-orange-600' },
-      ]
-    },
-    {
-      title: 'DevOps / Infra',
-      skills: [
-        { name: 'Docker', level: 80, color: 'from-blue-400 to-blue-600' },
-        { name: 'Nginx', level: 78, color: 'from-green-400 to-green-600' },
-        { name: 'Linux', level: 82, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'Git & GitHub Actions', level: 90, color: 'from-red-400 to-red-600' },
-        { name: 'Vercel / Netlify / Render', level: 88, color: 'from-purple-400 to-purple-600' },
-      ]
-    },
-    {
-      title: 'Integrations',
-      skills: [
-        { name: 'Firebase (FCM, Auth)', level: 82, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'Razorpay', level: 80, color: 'from-blue-400 to-blue-600' },
-        { name: 'Google Maps API', level: 78, color: 'from-green-400 to-green-600' },
-        { name: 'Gemini AI API', level: 75, color: 'from-cyan-400 to-cyan-600' },
-        { name: 'Postman', level: 90, color: 'from-orange-400 to-orange-600' },
-      ]
-    }
-  ]
+const Skills = () => (
+  <Section id="skills">
+    <SectionHeading eyebrow="Skills" title="Technical Skills" />
 
-  return (
-    <section id="skills" className="py-20 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Technical <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Skills</span>
-          </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Technologies and tools I work with to bring ideas to life
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
-            <motion.div
-              key={category.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: categoryIndex * 0.1 }}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300"
-            >
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">
-                {category.title}
-              </h3>
-              <div className="space-y-6">
-                {category.skills.map((skill, skillIndex) => (
-                  <motion.div
-                    key={skill.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: (categoryIndex * 0.1) + (skillIndex * 0.05) }}
-                  >
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-300 font-medium">{skill.name}</span>
-                      <span className="text-sm text-gray-400">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-slate-700 rounded-full h-2">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ 
-                          delay: (categoryIndex * 0.1) + (skillIndex * 0.05) + 0.2,
-                          duration: 1,
-                          ease: "easeOut"
-                        }}
-                        className={`h-2 rounded-full bg-gradient-to-r ${skill.color}`}
-                      />
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Tech Stack Icons */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-20"
-        >
-          <h3 className="text-2xl font-bold text-white text-center mb-10">
-            Technologies I Love Working With
-          </h3>
-          <div className="flex flex-wrap justify-center gap-8">
-            {['React.js', 'React Native', 'Node.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'MongoDB', 'Express.js', 'Docker', 'Nginx', 'Firebase', 'Razorpay'].map((tech, index) => (
-              <motion.div
-                key={tech}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ scale: 1.1, y: -5 }}
-                className="bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300"
-              >
-                <span className="text-gray-300 font-medium">{tech}</span>
-              </motion.div>
-            ))}
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {skillGroups.map((group, index) => (
+        <Reveal key={group.title} delay={index * 0.06}>
+          <div className="h-full rounded-2xl border border-line bg-ink-800/60 p-6">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-accent-400">
+              {group.title}
+            </h3>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {group.skills.map((skill) => (
+                <Chip key={skill}>{skill}</Chip>
+              ))}
+            </div>
           </div>
-        </motion.div>
-      </div>
-    </section>
-  )
-}
+        </Reveal>
+      ))}
+    </div>
+  </Section>
+);
 
-export default Skills
+export default Skills;
