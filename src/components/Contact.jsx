@@ -5,7 +5,7 @@ import Section from "./ui/Section";
 import { Reveal } from "./ui/Section";
 import { email } from "../data/social";
 
-const EMAILJS_SERVICE_ID = "service_hbx4zdw";
+const EMAILJS_SERVICE_ID = "service_oen2ykj";
 const EMAILJS_TEMPLATE_ID = "template_lepcpyq";
 const EMAILJS_PUBLIC_KEY = "bb4mToSG2qnLyFG7-";
 
