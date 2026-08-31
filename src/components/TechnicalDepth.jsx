@@ -8,6 +8,7 @@ const TechnicalDepth = () => (
   <Section id="technical-depth" className="bg-ink-900/40">
     <SectionHeading
       eyebrow="Engineering"
+      index="04"
       title="What I Work On"
       description="The kinds of problems I keep coming back to, beyond a stack list."
     />

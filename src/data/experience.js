@@ -12,22 +12,22 @@ export const experiences = [
       {
         title: "AI-Powered Campaign Generation",
         bullets: [
-          "Built Gemini-powered campaign generation — lead matching, structured JSON drafting, and a multi-stage workflow (discovery → matching → drafting → approval → finalized).",
-          "Implemented anti-hallucination validation and prompt engineering across the orchestrator, context, prompt-service, and validator components.",
+          "Built LLM-powered campaign generation — lead matching, structured JSON drafting, and a multi-stage approval workflow.",
+          "Implemented anti-hallucination validation and prompt engineering to keep generated output reliable in production.",
         ],
       },
       {
         title: "Telephony",
         bullets: [
-          "Migrated and integrated Z99 telephony alongside Twilio — SIP/WebRTC calling, webhook handling, billing deduplication, and call-metadata mapping.",
-          "Designed the provisioning state machine and deprovisioning flows, and identified API gaps in the telephony provider.",
+          "Owned telephony infrastructure integration — SIP/WebRTC calling, webhook handling, billing deduplication, and call-metadata mapping across multiple providers.",
+          "Designed the provisioning and deprovisioning state machine for voice infrastructure.",
         ],
       },
       {
         title: "Production Engineering",
         bullets: [
-          "Built Go and Node.js backend services; implemented Zoho CRM sync via the outbox pattern and integrated the WhatsApp Business API (fixed a named-vs-positional parameter mismatch).",
-          "Debugged FCM push notification failures (ASN.1 parse error) and enforced IAM via a Next.js fetch-interceptor, including an IAM dependency-graph visualization.",
+          "Built Go and Node.js backend services; implemented Zoho CRM sync via the outbox pattern and integrated the WhatsApp Business API.",
+          "Debugged and resolved push-notification delivery failures and enforced API-level access control.",
           "Shipped React Native/Expo call-recording retrieval on Android using expo-media-library + StorageAccessFramework — no native Kotlin required.",
         ],
       },

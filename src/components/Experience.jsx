@@ -9,6 +9,7 @@ const Experience = () => (
   <Section id="experience">
     <SectionHeading
       eyebrow="Experience"
+      index="02"
       title="Where I've built"
       description="Production work across AI, backend, mobile, and infrastructure."
     />
