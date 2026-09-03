@@ -12,11 +12,11 @@
   --color-paper-dim: #c6cad3;
   --color-muted: #8b93a1;
 
-  --color-accent-300: #5eead4;
-  --color-accent-400: #2dd4bf;
-  --color-accent-500: #14b8a6;
-  --color-accent-600: #0d9488;
-  --color-accent-700: #0f766e;
+  --color-accent-300: #93c5fd;
+  --color-accent-400: #60a5fa;
+  --color-accent-500: #3b82f6;
+  --color-accent-600: #2563eb;
+  --color-accent-700: #1d4ed8;
 
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "SFMono-Regular", Menlo, Consolas,
@@ -36,7 +36,7 @@ body {
   color: var(--color-paper);
   position: relative;
   background-image:
-    radial-gradient(ellipse 60% 50% at 50% -10%, rgb(20 184 166 / 0.12), transparent),
+    radial-gradient(ellipse 60% 50% at 50% -10%, rgb(59 130 246 / 0.12), transparent),
     linear-gradient(rgb(255 255 255 / 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgb(255 255 255 / 0.035) 1px, transparent 1px);
   background-size: auto, 64px 64px, 64px 64px;
@@ -48,7 +48,7 @@ body {
 }
 
 ::selection {
-  background-color: rgb(20 184 166 / 0.35);
+  background-color: rgb(59 130 246 / 0.35);
   color: var(--color-paper);
 }
 
