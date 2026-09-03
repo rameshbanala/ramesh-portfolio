@@ -7,6 +7,7 @@ const About = () => (
   <Section id="about">
     <SectionHeading
       eyebrow="About"
+      index="01"
       title="What I build"
       align="left"
     />

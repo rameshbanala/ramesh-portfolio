@@ -20,7 +20,8 @@ const Projects = () => {
     <Section id="projects">
       <SectionHeading
         eyebrow="Projects"
-        title="Selected Projects"
+        index="03"
+        title="Featured Work"
         description="Two projects, presented as case studies — how they're built, not just what they look like."
       />
 

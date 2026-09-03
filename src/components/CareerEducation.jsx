@@ -6,7 +6,7 @@ import { education, achievement } from "../data/careerEducation";
 
 const CareerEducation = () => (
   <Section id="career">
-    <SectionHeading eyebrow="Career" title="Career & Education" />
+    <SectionHeading eyebrow="Career" index="06" title="Career & Education" />
 
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <Reveal>

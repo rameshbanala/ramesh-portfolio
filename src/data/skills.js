@@ -17,7 +17,7 @@ export const skillGroups = [
   },
   {
     title: "Integrations",
-    skills: ["Z99", "Twilio", "SIP / WebRTC", "WebSockets", "Zoho CRM", "Razorpay", "WhatsApp Business API"],
+    skills: ["Twilio", "SIP / WebRTC", "WebSockets", "Zoho CRM", "Razorpay", "WhatsApp Business API"],
   },
   {
     title: "Cloud",
